@@ -21,6 +21,10 @@ function Login() {
         }
     };
 
+    const handleSignIn = () =>{
+        navigate(`/signin`)
+    };
+
     return (
         <div>
             <h2>Login</h2>
@@ -41,6 +45,7 @@ function Login() {
                 />
                 <button type="submit">Login</button>
             </form>
+            <button onClick={handleSignIn}>SignIn</button>
         </div>
     );
 }
